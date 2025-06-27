@@ -14,7 +14,7 @@ const Popup = () => {
       {isVisible ? (
         ""
       ) : (
-        <div className="popup">
+        <div className="popup w-container">
           <button className="text-4xl shadow-amber-50 text-secondary hover:text-main" onClick={togglePopup}>
             <IoIosCloseCircle />
           </button>
@@ -32,6 +32,10 @@ const Popup = () => {
           padding: 20px;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           z-index: 1000;
+          width: 80%;
+          scrrollbar-width: thin;
+          max-height: 100vh;
+          overflow-y: auto;
         }
       `}</style>
     </div>
