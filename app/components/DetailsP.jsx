@@ -1,3 +1,4 @@
+import Image from "next/image";
 const detailsdata = [
   {
     img: "/image/details-img-1.jpg",
@@ -15,49 +16,73 @@ const detailsdata = [
 ];
 const DetailsP = () => {
   return (
-    <div className=" container mx-auto ">
+    <div className="  container mx-auto ">
       {detailsdata.map((item, index) => (
-        <div key={index} className="p-4 bg-white rounded-lg shadow-md ">
-          <img
+        <div key={index} className="p-4 bg-white rounded-lg  ">
+          <Image
             src={item.img}
             alt="Project Image"
-            className="object-cover rounded-lg mb-4"
+            className="object-cover rounded-lg mx-auto w-full "
+            width={1000}
+            height={500}
           />
-          <div className="flex justify-between items-center mb-4">
+          <div className="flex justify-between items-center  mt-5">
             <div className="w-2/3">
               <h2 className="text-2xl font-bold mb-2">{item.title}</h2>
               <p className="text-gray-700 mb-4">{item.description}</p>
             </div>
-            <div className="w-1/4 flex flex-col justify-end">
-              <div className="flex space-x-2">
-                <a
-                  href={item.libeLink}
-                  className="text-blue-500 hover:underline"
-                >
-                  Live Link
-                </a>
-                <a
-                  href={item.clintLink}
-                  className="text-blue-500 hover:underline"
-                >
-                  Clint Link
-                </a>
-                <a
-                  href={item.sarvarLink}
-                  className="text-blue-500 hover:underline"
-                >
-                Sarvar Link
-                </a>
-                
-            </div>
-            <p className="text-gray-700 mb-4">{item.category}</p>
-            <p className="text-gray-700 mb-4">Date: {item.date}</p>
-            <p className="text-gray-700 mb-4">
-              Tools: {item.tools.join(", ")}
-            </p>
-            <p className="text-gray-700 mb-4">Status: {item.status}</p>
+            <div className="w-1/3 flex flex-col justify-end p-5 bg-neutral-100 rounded-lg ">
+              <table className=" leading-8">
+                <tr>
+                  <td className=" font-semibold font-Roboto text-lg">Category</td>
+                  <td className="text-gray-700 font-popins ">
+                    {" "}
+                    {item.category}
+                  </td>
+                </tr>
+                <tr>
+                  <td className=" font-semibold font-Roboto  text-lg"> Start Date</td>
+                  <td className="text-gray-700 font-popins ">
+                    {" "}
+                    {item.date}
+                  </td>
+                </tr>
+                <tr>
+                  <td className=" font-semibold font-Roboto  text-lg"> End Date</td>
+                  <td className="text-gray-700 font-popins ">
+                    {" "}
+                    {item.date}
+                  </td>
+                </tr>
+                <tr>
+                  <td className=" font-semibold font-Roboto  text-lg">  Tools</td>
+                  <td className="text-gray-700 font-popins ">
+                    {" "}
+                    {item.tools.join(", ")}
+                  </td>
+                </tr>
+                <tr>
+                  <td className=" font-semibold font-Roboto  text-lg">    Status</td>
+                  <td className="text-gray-700 font-popins ">
+                    {" "}
+                     {item.status}
+                  </td>
+                </tr>
+              </table>
 
-
+           
+              <div className="flex justify-between mt-4">
+                <button className=" border  font-semibold border-main text-white px-4 py-2 rounded bg-main hover:text-main hover:bg-white transition-colors">
+                  <a href={item.libeLink} className=" hover:underline">
+                    Live Demo
+                  </a>
+                </button>
+                <button className=" border  font-semibold border-main text-main px-4 py-2 rounded bg-white hover:bg-main hover:text-white transition-colors">
+                  <a href={item.clintLink} className="hover:underline">
+                    Video Link
+                  </a>
+                </button>
+              </div>
             </div>
           </div>
         </div>

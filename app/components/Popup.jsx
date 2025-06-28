@@ -14,7 +14,7 @@ const Popup = () => {
       {isVisible ? (
         ""
       ) : (
-        <div className="popup w-container">
+        <div className="popup container">
           <button className="text-4xl shadow-amber-50 text-secondary hover:text-main" onClick={togglePopup}>
             <IoIosCloseCircle />
           </button>
