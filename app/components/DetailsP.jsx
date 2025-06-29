@@ -33,6 +33,7 @@ const DetailsP = () => {
             </div>
             <div className="w-1/3 flex flex-col justify-end p-5 bg-neutral-100 rounded-lg ">
               <table className=" leading-8">
+                <tbody>
                 <tr>
                   <td className=" font-semibold font-Roboto text-lg">Category</td>
                   <td className="text-gray-700 font-popins ">
@@ -68,6 +69,7 @@ const DetailsP = () => {
                      {item.status}
                   </td>
                 </tr>
+                </tbody>
               </table>
 
            
