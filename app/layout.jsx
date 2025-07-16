@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
           <header>
             <Header />
           </header>
-          <nav className=" absolute top-32 left-0 w-full z-10">
+          <nav className=" absolute top-32 left-0 md:w-full  z-10">
            <Nav />
           </nav>
           <main className="relative" >{children}</main>

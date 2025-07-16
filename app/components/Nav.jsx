@@ -1,75 +1,45 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaUser } from "react-icons/fa";
 import { CgNotes } from "react-icons/cg";
 import { IoHomeOutline } from "react-icons/io5";
 import { CiFolderOn } from "react-icons/ci";
-import { PiNotePencilLight } from "react-icons/pi";
 import { CgMail } from "react-icons/cg";
 
+
+
+const navdata=[
+  {key:"/", label:"Home",link:"/", icon: <IoHomeOutline className=" text-xl md:text-2xl  text-white" />},
+  {key:"/about", label:"About",link:"/about", icon: <FaUser className=" text-xl md:text-2xl  text-white" />},
+  {key:"/resume", label:"Resume",link:"/resume", icon: <CgNotes className="text-xl md:text-2xl  text-white" />},
+  {key:"/protfolio", label:"Protfolio",link:"/protfolio", icon: <CiFolderOn className="text-xl md:text-2xl  text-white" />},
+  {key:"/contact", label:"Contact",link:"/contact", icon: <CgMail className="text-xl md:text-2xl  text-white" />},
+ 
+]
+
 const Nav = () => {
+   const pathname = usePathname();
   return (
-    <div className="flex justify-center items-center gap-5 ">
-      <Link href="/">
-        <div className=" relative    hover:w-44 w-15 h-15 bg-white  rounded-full flex justify-center items-center duration-[1s,3s] ">
-          <h1 className="font-display  text-base text-primary font-open font-semibold">
-            Home
-          </h1>
-          <div className="bg-main p-4 rounded-full border-2  left-0 absolute ">
-            <IoHomeOutline className=" text-2xl  text-white" />
-          </div>
-        </div>
-      </Link>
-      <Link href="/about">
-       <div className=" relative   hover:w-44 w-15 h-15 bg-white  rounded-full flex justify-center items-center  duration-[1s,3s]">
-          <h1 className="font-display  text-base text-primary font-open font-semibold">
-            About
-          </h1>
-          <div className="bg-main p-4 rounded-full border-2  left-0 absolute ">
-            <FaUser className=" text-2xl  text-white" />
-          </div>
-        </div>
-      </Link>
-      <Link href="/resume">
-        <div className=" relative   hover:w-44 w-15 h-15 bg-white  rounded-full flex justify-center items-center  duration-[1s,3s]">
-          <h1 className="font-display  text-base text-primary font-open font-semibold">
-            Resume
-          </h1>
-          <div className="bg-main p-4 rounded-full border-2  left-0 absolute ">
-            <CgNotes className=" text-2xl  text-white" />
-          </div>
-        </div>
-      </Link>
-      <Link href="/protfolio">
-      <div className=" relative   hover:w-44 w-15 h-15 bg-white  rounded-full flex justify-center items-center duration-[1s,3s] ">
-          <h1 className="font-display  text-base text-primary font-open font-semibold">
-            Portfolio
-          </h1>
-          <div className="bg-main p-4 rounded-full border-2  left-0 absolute ">
-            <CiFolderOn className=" text-2xl  text-white" />
-          </div>
-        </div>
-      </Link>
-      {/* <Link href="/blog">
-       <div className=" relative   hover:w-44 w-15 h-15 bg-white  rounded-full flex justify-center items-center  duration-[1s,3s]">
-          <h1 className="font-display  text-base text-primary font-open font-semibold">
-            Blog
-          </h1>
-          <div className="bg-main p-4 rounded-full border-2  left-0 absolute ">
-            <PiNotePencilLight className=" text-2xl  text-white" />
-          </div>
-        </div>
+    <div className="flex justify-center items-center gap-2 md:gap-5 ">
+      {navdata.map((navdata)=>(
+        
+       <Link href={navdata.link} key={navdata.key}>
       
-      </Link> */}
-      <Link href="/contact">
-        <div className=" relative   hover:w-44 w-15 h-15 bg-white  rounded-full flex justify-center items-center duration-[1s,3s] ">
-          <h1 className="font-display  text-base text-primary font-open font-semibold">
-            Contact
+        <div className={`relative   ${pathname===navdata.key ? "md:w-44" :"md:hover:w-44"} w-10 h-10    md:w-15 md:h-15 md:bg-white  rounded-full flex justify-center items-center duration-[1s,3s]`}>
+          <h1 className="font-display hidden md:block text-base text-primary font-open font-semibold">
+            {navdata.label}
           </h1>
-          <div className="bg-main p-4 rounded-full border-2  left-0 absolute ">
-            <CgMail className=" text-2xl  text-white" />
+            
+          <div className="bg-main p-2 md:p-4 rounded-full border-2 left-15  md:left-0 absolute ">
+        {navdata.icon}
           </div>
-        </div>
+      </div>
       </Link>
+    
+      ))}
+    
+     
     </div>
   );
 };
