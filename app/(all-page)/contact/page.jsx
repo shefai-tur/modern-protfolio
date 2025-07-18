@@ -1,3 +1,4 @@
+import Nav from "@/app/components/Nav";
 import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
@@ -5,7 +6,10 @@ import { MdEmail } from "react-icons/md";
 
 const contact = () => {
   return (
-    <div className="container mx-auto w-full   min-h-100vh bg-white rounded-xl  text-black px-12 py-25">
+    <div className="container mx-auto w-full   min-h-100vh bg-white rounded-xl  text-black px-12 py-25 relative">
+        <nav className=" absolute top-[-15] md:top-[-30] right-0 w-full z-50">
+                 <Nav/>
+                </nav>
       <div className="grid grid-cols-3 gap-6">
         <div className="flex items-center gap-4">
           <p className=" bg-main-border w-16 h-16 rounded-sm flex items-center justify-center">

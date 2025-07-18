@@ -1,10 +1,15 @@
 import Image from "next/image";
+import Nav from "./components/Nav";
 export default function Home() {
   return (
     <main>
       <div className="container mx-auto md:px-5 ">
-        <div className="  w-full h-full rounded-xl border md:border-4   border-white bg-[url(/image/homeImg1.jpg)] bg-cover bg-center bg-no-repeat  ">
+        <div className="  w-full h-full rounded-xl border md:border-4   border-white bg-[url(/image/homeImg1.jpg)] bg-cover bg-center bg-no-repeat  relative">
+          <nav className=" absolute bottom-[-20]  w-full z-50">
+           <Nav/>
+          </nav>
           <div className="md:flex   items-center justify-center h-full bg-black/50  rounded-xl py-14  ">
+         
             <div className="md:w-1/2">
               <div className=" w-44 h-56 md:w-90 md:h-[500px] rounded-full   mx-auto  relative  ">
                 <Image
@@ -75,6 +80,7 @@ export default function Home() {
               </button>
             </div>
           </div>
+          
         </div>
       </div>
     </main>

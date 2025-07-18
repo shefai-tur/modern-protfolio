@@ -5,11 +5,15 @@ import App from "@/app/components/App";
 import SidbarP from "@/app/components/SidbarP";
 import All from "@/app/components/All";
 import UiUx from "@/app/components/UiUx";
+import Nav from "@/app/components/Nav";
 const protfolio = () => {
     const [activeSection, setActiveSection] = useState("all");
   return (
-    <div className="container mx-auto w-full   min-h-100vh bg-white rounded-xl  text-black px-12 py-25">
-      {/* =====================About Me===================== */}
+    <div className="container mx-auto w-full   min-h-100vh bg-white rounded-xl  text-black px-12 py-25 relative">
+        <nav className="absolute top-[-15] md:top-[-30] right-0 w-full z-50">
+                 <Nav/>
+                </nav>
+      {/* =====================Protfolio===================== */}
       <h1 className="text-4xl mb-10 pl-6  font-semibold  font-Roboto leading-[1.1] border-l-4 border-l-main ">
         Portfolio
       </h1>

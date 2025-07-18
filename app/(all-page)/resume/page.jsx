@@ -1,4 +1,5 @@
 "use client";
+import Nav from "@/app/components/Nav";
 import Image from "next/image";
 import { Carousel } from "react-responsive-3d-carousel";
 import "react-responsive-3d-carousel/dist/styles.css";
@@ -31,7 +32,10 @@ const resume = () => {
     />,
   ];
   return (
-    <div className=" container mx-auto bg-white  text-black px-12 py-25 min-h-100vh w-full rounded-xl">
+    <div className=" container mx-auto bg-white  text-black px-12 py-25 min-h-100vh w-full rounded-xl relative">
+        <nav className=" absolute top-[-15] md:top-[-30] right-0 w-full z-50">
+                 <Nav/>
+                </nav>
       <div className=" border-b-1 border-b-main-border pb-24">
         <h1 className="text-4xl mb-14 pl-6  font-semibold  font-Roboto leading-[1.1] border-l-4 border-l-main ">
           Resume

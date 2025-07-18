@@ -31,7 +31,7 @@ const Nav = () => {
             {navdata.label}
           </h1>
             
-          <div className="bg-main p-2 md:p-4 rounded-full border-2 left-15  md:left-0 absolute ">
+          <div className="bg-main p-2 md:p-4 rounded-full border-2 left-0 absolute   border-white ">
         {navdata.icon}
           </div>
       </div>
