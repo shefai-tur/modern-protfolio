@@ -26,12 +26,12 @@ const DetailsP = () => {
             width={1000}
             height={500}
           />
-          <div className="flex justify-between items-center  mt-5">
-            <div className="w-2/3">
-              <h2 className="text-2xl font-bold mb-2">{item.title}</h2>
+          <div className="md:flex justify-between items-center  mt-5">
+            <div className="md:w-2/3">
+              <h2 className="md:text-2xl text-xl font-bold mb-2">{item.title}</h2>
               <p className="text-gray-700 mb-4">{item.description}</p>
             </div>
-            <div className="w-1/3 flex flex-col justify-end p-5 bg-neutral-100 rounded-lg ">
+            <div className="md:w-1/3 flex flex-col justify-end p-5 bg-neutral-100 rounded-lg ">
               <table className=" leading-8">
                 <tbody>
                 <tr>

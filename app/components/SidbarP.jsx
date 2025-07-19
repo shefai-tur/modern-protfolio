@@ -2,14 +2,14 @@
 
 const sections = [
   { key: "all",  label: "All" },
-  { key: "web",  label: "Web Development" },
-  { key: "app",  label: "App Development" },
+  { key: "web",  label: "Web " },
+  { key: "app",  label: "App " },
   { key: "ui",  label: "UI/UX Design" },
 ];
 const SidbarP = ({ activeSection, onSectionChange }) => {
   return (
     <div>
-      <ul className="flex gap-4 text-lg font-open font-semibold mb-8 justify-center border-b-1 border-b-gray-300 pb-2 w-[520px] mx-auto">
+      <ul className="flex gap-4 text-base md:text-lg font-open font-semibold mb-8 justify-center border-b-1 border-b-gray-300 pb-2  md:w-[520px] mx-auto">
         {sections.map((section) => (
           <li
             key={section.key} 

@@ -32,21 +32,21 @@ const resume = () => {
     />,
   ];
   return (
-    <div className=" container mx-auto bg-white  text-black px-12 py-25 min-h-100vh w-full rounded-xl relative">
+    <div className=" container mx-auto bg-white  text-black px-5 md:px-12 md:py-25 py-10 min-h-100vh w-full rounded-xl relative">
         <nav className=" absolute top-[-15] md:top-[-30] right-0 w-full z-50">
                  <Nav/>
                 </nav>
-      <div className=" border-b-1 border-b-main-border pb-24">
-        <h1 className="text-4xl mb-14 pl-6  font-semibold  font-Roboto leading-[1.1] border-l-4 border-l-main ">
+      <div className=" border-b-1 border-b-main-border md:pb-24 pb-10">
+        <h1 className="md:text-4xl text-3xl md:mb-14 mb-8 pl-6  font-semibold  font-Roboto leading-[1.1] border-l-4 border-l-main ">
           Resume
         </h1>
-        <div className="flex  justify-between">
-          <div className="w-2/5 ">
-            <h2 className="font-open text-3xl font-semibold tracking-wider pb-5">
+        <div className="md:flex  justify-between">
+          <div className="md:w-2/5 ">
+            <h2 className="font-open md:text-3xl text-2xl font-semibold tracking-wider md:pb-5 pb-3">
               Work Experience
             </h2>
             <div className=" relative pl-5 ">
-              <h3 className="font-popins text-2xl font-semibold tracking-wider after:w-2.5 after:h-2.5 after:bg-main after:content-['']  after:rounded-full after:top-3 after:left-[-4] after:absolute   before:border-l before:border-l-main-border  before:absolute before:top-3 before:left-0 before:h-full before:content-[''] ">
+              <h3 className="font-popins md:text-2xl text-xl font-semibold tracking-wider after:w-2.5 after:h-2.5 after:bg-main after:content-['']  after:rounded-full after:top-3 after:left-[-4] after:absolute   before:border-l before:border-l-main-border  before:absolute before:top-3 before:left-0 before:h-full before:content-[''] ">
                 Software Development
               </h3>
 
@@ -64,7 +64,7 @@ const resume = () => {
               </ul>
             </div>
             <div className=" relative pl-5 ">
-              <h3 className="font-popins text-2xl font-semibold tracking-wider after:w-2.5 after:h-2.5 after:bg-main after:content-['']  after:rounded-full after:top-3 after:left-[-4] after:absolute   before:border-l before:border-l-main-border  before:absolute before:top-3 before:left-0 before:h-full before:content-[''] ">
+              <h3 className="font-popins md:text-2xl text-xl font-semibold tracking-wider after:w-2.5 after:h-2.5 after:bg-main after:content-['']  after:rounded-full after:top-3 after:left-[-4] after:absolute   before:border-l before:border-l-main-border  before:absolute before:top-3 before:left-0 before:h-full before:content-[''] ">
                 Full stack Web And App Development
               </h3>
 
@@ -83,7 +83,7 @@ const resume = () => {
               </ul>
             </div>
             <div className=" relative pl-5 ">
-              <h3 className="font-popins text-2xl font-semibold tracking-wider after:w-2.5 after:h-2.5 after:bg-main after:content-['']  after:rounded-full after:top-3 after:left-[-4] after:absolute   before:border-l before:border-l-main-border  before:absolute before:top-3 before:left-0 before:h-full before:content-[''] ">
+              <h3 className="font-popins md:text-2xl text-xl font-semibold tracking-wider after:w-2.5 after:h-2.5 after:bg-main after:content-['']  after:rounded-full after:top-3 after:left-[-4] after:absolute   before:border-l before:border-l-main-border  before:absolute before:top-3 before:left-0 before:h-full before:content-[''] ">
                 MERN Stack Development
               </h3>
 
@@ -102,12 +102,12 @@ const resume = () => {
               </ul>
             </div>
           </div>
-          <div className="w-2/5">
-            <h2 className="font-open text-3xl font-semibold tracking-wider pb-5">
+          <div className="md:w-2/5 mt-10 md:mt-0">
+            <h2 className="font-open md:text-3xl text-2xl font-semibold tracking-wider md:pb-5 pb-3">
               Education
             </h2>
             <div className=" relative pl-5 ">
-              <h3 className="font-popins text-2xl font-semibold tracking-wider after:w-2.5 after:h-2.5 after:bg-main after:content-['']  after:rounded-full after:top-3 after:left-[-4] after:absolute   before:border-l before:border-l-main-border  before:absolute before:top-3 before:left-0 before:h-full before:content-[''] ">
+              <h3 className="font-popins md:text-2xl text-xl font-semibold tracking-wider after:w-2.5 after:h-2.5 after:bg-main after:content-['']  after:rounded-full after:top-3 after:left-[-4] after:absolute   before:border-l before:border-l-main-border  before:absolute before:top-3 before:left-0 before:h-full before:content-[''] ">
                 Diploma in Engineering (CSE-2023)
               </h3>
 
@@ -133,7 +133,7 @@ const resume = () => {
               </div>
             </div>
             <div className=" relative pl-5 ">
-              <h3 className="font-popins text-2xl font-semibold tracking-wider after:w-2.5 after:h-2.5 after:bg-main after:content-['']  after:rounded-full after:top-3 after:left-[-4] after:absolute   before:border-l before:border-l-main-border  before:absolute before:top-3 before:left-0 before:h-full before:content-[''] ">
+              <h3 className="font-popins md:text-2xl text-xl font-semibold tracking-wider after:w-2.5 after:h-2.5 after:bg-main after:content-['']  after:rounded-full after:top-3 after:left-[-4] after:absolute   before:border-l before:border-l-main-border  before:absolute before:top-3 before:left-0 before:h-full before:content-[''] ">
                 Secondary School Certificate (SSC-2019)
               </h3>
 
@@ -161,12 +161,12 @@ const resume = () => {
       </div>
       {/* ==================== skills ponts ==================== */}
 
-      <div className=" mt-28">
-        <h1 className="text-4xl mb-14 pl-6  font-semibold  font-Roboto leading-[1.1] border-l-4 border-l-main ">
+      <div className=" md:mt-28 mt-10">
+        <h1 className="md:text-4xl text-3xl md:mb-14 mb-5 pl-6  font-semibold  font-Roboto leading-[1.1] border-l-4 border-l-main ">
           Skill Point
         </h1>
-        <div className="flex justify-between border-b-1 border-b-main-border pb-24">
-          <div className="w-2/5">
+        <div className="md:flex justify-between border-b-1 border-b-main-border md:pb-24 pb-10 mt-5">
+          <div className="md:w-2/5">
             <div>
               <Image
                 src="/image/skill.gif"
@@ -176,9 +176,9 @@ const resume = () => {
               />
             </div>
           </div>
-          <div className="w-1/2 ">
-            <div className="grid grid-cols-4 gap-5">
-              <div className="  w-24 h-24 bg-neutral rounded-full flex justify-center items-center">
+          <div className="md:w-1/2 ">
+            <div className="grid grid-cols-4  gap-5">
+              <div className=" w-20 h-20  md:w-24 md:h-24 bg-neutral rounded-full flex justify-center items-center">
                 <Image
                   src="/image/skill1.png"
                   alt="Picture of the author"
@@ -186,7 +186,7 @@ const resume = () => {
                   height={60}
                 />
               </div>
-              <div className="  w-24 h-24 bg-neutral rounded-full flex justify-center items-center">
+              <div className="  w-20 h-20  md:w-24 md:h-24 bg-neutral rounded-full flex justify-center items-center">
                 <Image
                   src="/image/skill2.png"
                   alt="Picture of the author"
@@ -194,7 +194,7 @@ const resume = () => {
                   height={60}
                 />
               </div>
-              <div className="  w-24 h-24 bg-neutral rounded-full flex justify-center items-center">
+              <div className=" w-20 h-20  md:w-24 md:h-24 bg-neutral rounded-full flex justify-center items-center">
                 <Image
                   src="/image/skill3.png"
                   alt="Picture of the author"
@@ -202,7 +202,7 @@ const resume = () => {
                   height={60}
                 />
               </div>
-              <div className="  w-24 h-24 bg-neutral rounded-full flex justify-center items-center">
+              <div className="  w-20 h-20  md:w-24 md:h-24 bg-neutral rounded-full flex justify-center items-center">
                 <Image
                   src="/image/skill4.png"
                   alt="Picture of the author"
@@ -210,7 +210,7 @@ const resume = () => {
                   height={60}
                 />
               </div>
-              <div className="  w-24 h-24 bg-neutral rounded-full flex justify-center items-center">
+              <div className="  w-20 h-20  md:w-24 md:h-24 bg-neutral rounded-full flex justify-center items-center">
                 <Image
                   src="/image/skill5.png"
                   alt="Picture of the author"
@@ -218,7 +218,7 @@ const resume = () => {
                   height={60}
                 />
               </div>
-              <div className="  w-24 h-24 bg-neutral rounded-full flex justify-center items-center">
+              <div className="  w-20 h-20  md:w-24 md:h-24 bg-neutral rounded-full flex justify-center items-center">
                 <Image
                   src="/image/skill6.png"
                   alt="Picture of the author"
@@ -226,7 +226,7 @@ const resume = () => {
                   height={60}
                 />
               </div>
-              <div className="  w-24 h-24 bg-neutral rounded-full flex justify-center items-center">
+              <div className="  w-20 h-20  md:w-24 md:h-24 bg-neutral rounded-full flex justify-center items-center">
                 <Image
                   src="/image/skill7.png"
                   alt="Picture of the author"
@@ -234,7 +234,7 @@ const resume = () => {
                   height={60}
                 />
               </div>
-              <div className="  w-24 h-24 bg-neutral rounded-full flex justify-center items-center">
+              <div className="  w-20 h-20  md:w-24 md:h-24 bg-neutral rounded-full flex justify-center items-center">
                 <Image
                   src="/image/skill8.png"
                   alt="Picture of the author"
@@ -242,7 +242,7 @@ const resume = () => {
                   height={60}
                 />
               </div>
-              <div className="  w-24 h-24 bg-neutral rounded-full flex justify-center items-center">
+              <div className=" w-20 h-20  md:w-24 md:h-24 bg-neutral rounded-full flex justify-center items-center">
                 <Image
                   src="/image/skill9.png"
                   alt="Picture of the author"
@@ -250,7 +250,7 @@ const resume = () => {
                   height={60}
                 />
               </div>
-              <div className="  w-24 h-24 bg-neutral rounded-full flex justify-center items-center">
+              <div className="  w-20 h-20  md:w-24 md:h-24 bg-neutral rounded-full flex justify-center items-center">
                 <Image
                   src="/image/skill10.png"
                   alt="Picture of the author"
@@ -258,7 +258,7 @@ const resume = () => {
                   height={60}
                 />
               </div>
-              <div className="  w-24 h-24 bg-neutral rounded-full flex justify-center items-center">
+              <div className=" w-20 h-20  md:w-24 md:h-24 bg-neutral rounded-full flex justify-center items-center">
                 <Image
                   src="/image/skill11.png"
                   alt="Picture of the author"
@@ -266,7 +266,7 @@ const resume = () => {
                   height={60}
                 />
               </div>
-              <div className="  w-24 h-24 bg-neutral rounded-full flex justify-center items-center">
+              <div className="  w-20 h-20  md:w-24 md:h-24 bg-neutral rounded-full flex justify-center items-center">
                 <Image
                   src="/image/skill12.png"
                   alt="Picture of the author"
@@ -274,7 +274,7 @@ const resume = () => {
                   height={60}
                 />
               </div>
-              <div className="  w-24 h-24 bg-neutral rounded-full flex justify-center items-center">
+              <div className=" w-20 h-20  md:w-24 md:h-24 bg-neutral rounded-full flex justify-center items-center">
                 <Image
                   src="/image/skill13.png"
                   alt="Picture of the author"
@@ -282,7 +282,7 @@ const resume = () => {
                   height={60}
                 />
               </div>
-              <div className="  w-24 h-24 bg-neutral rounded-full flex justify-center items-center">
+              <div className="  w-20 h-20  md:w-24 md:h-24 bg-neutral rounded-full flex justify-center items-center">
                 <Image
                   src="/image/skill14.png"
                   alt="Picture of the author"
@@ -295,8 +295,8 @@ const resume = () => {
         </div>
       </div>
       {/* ==================== CERTIFICATE ==================== */}
-      <div className="mt-28">
-        <h1 className="text-4xl mb-14 pl-6  font-semibold  font-Roboto leading-[1.1] border-l-4 border-l-main ">
+      <div className="md:mt-28 mt-10">
+        <h1 className="md:text-4xl text-3xl md:mb-14 mb-5 pl-6  font-semibold  font-Roboto leading-[1.1] border-l-4 border-l-main ">
           MY CERTIFICATE
         </h1>
       

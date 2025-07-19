@@ -6,11 +6,11 @@ import { MdEmail } from "react-icons/md";
 
 const contact = () => {
   return (
-    <div className="container mx-auto w-full   min-h-100vh bg-white rounded-xl  text-black px-12 py-25 relative">
+    <div className="container mx-auto w-full   min-h-100vh bg-white rounded-xl  text-black md:px-12 px-5 md:py-25 py-10 relative">
         <nav className=" absolute top-[-15] md:top-[-30] right-0 w-full z-50">
                  <Nav/>
                 </nav>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="md:grid md:grid-cols-3 md:gap-6">
         <div className="flex items-center gap-4">
           <p className=" bg-main-border w-16 h-16 rounded-sm flex items-center justify-center">
             <FaLocationDot className="text-2xl text-main " />
@@ -22,7 +22,7 @@ const contact = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 my-2.5 md:my-0">
           <p className=" bg-main-border w-16 h-16 rounded-sm flex items-center justify-center">
             <FaPhone className="text-2xl text-main " />
           </p>
@@ -45,12 +45,12 @@ const contact = () => {
           </div>
         </div>
       </div>
-      <div className="mt-12 mb-6">
-        <h1 className="text-4xl font-Roboto font-semibold text-center">
+      <div className="md:mt-12 mt-5 md:mb-6 mb-3">
+        <h1 className="md:text-4xl text-3xl font-Roboto font-semibold text-center">
           Send me a message
         </h1>
       <div className="w-[80%] mx-auto mt-14">
-          <div className="grid grid-cols-2 gap-6  ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6  ">
           <input
             type="text"
             placeholder="Your Name"

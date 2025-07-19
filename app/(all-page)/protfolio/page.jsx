@@ -9,12 +9,12 @@ import Nav from "@/app/components/Nav";
 const protfolio = () => {
     const [activeSection, setActiveSection] = useState("all");
   return (
-    <div className="container mx-auto w-full   min-h-100vh bg-white rounded-xl  text-black px-12 py-25 relative">
+    <div className="container mx-auto w-full   min-h-100vh bg-white rounded-xl  text-black px-5 md:px-12 md:py-25 py-10 relative">
         <nav className="absolute top-[-15] md:top-[-30] right-0 w-full z-50">
                  <Nav/>
                 </nav>
       {/* =====================Protfolio===================== */}
-      <h1 className="text-4xl mb-10 pl-6  font-semibold  font-Roboto leading-[1.1] border-l-4 border-l-main ">
+      <h1 className="md:text-4xl text-3xl mb-10 pl-6  font-semibold  font-Roboto leading-[1.1] border-l-4 border-l-main ">
         Portfolio
       </h1>
       <div>

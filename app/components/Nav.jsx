@@ -10,11 +10,11 @@ import { CgMail } from "react-icons/cg";
 
 
 const navdata=[
-  {key:"/", label:"Home",link:"/", icon: <IoHomeOutline className=" text-xl md:text-2xl  text-white" />},
-  {key:"/about", label:"About",link:"/about", icon: <FaUser className=" text-xl md:text-2xl  text-white" />},
-  {key:"/resume", label:"Resume",link:"/resume", icon: <CgNotes className="text-xl md:text-2xl  text-white" />},
-  {key:"/protfolio", label:"Protfolio",link:"/protfolio", icon: <CiFolderOn className="text-xl md:text-2xl  text-white" />},
-  {key:"/contact", label:"Contact",link:"/contact", icon: <CgMail className="text-xl md:text-2xl  text-white" />},
+  {key:"/home", label:"Home",link:"/", icon: <IoHomeOutline className=" text-xl md:text-2xl " />},
+  {key:"/about", label:"About",link:"/about", icon: <FaUser className=" text-xl md:text-2xl  " />},
+  {key:"/resume", label:"Resume",link:"/resume", icon: <CgNotes className="text-xl md:text-2xl  " />},
+  {key:"/protfolio", label:"Protfolio",link:"/protfolio", icon: <CiFolderOn className="text-xl md:text-2xl  " />},
+  {key:"/contact", label:"Contact",link:"/contact", icon: <CgMail className="text-xl md:text-2xl " />},
  
 ]
 
@@ -31,7 +31,7 @@ const Nav = () => {
             {navdata.label}
           </h1>
             
-          <div className="bg-main p-2 md:p-4 rounded-full border-2 left-0 absolute   border-white ">
+          <div className={`${pathname===navdata.key ?"border-main bg-white  text-main " :"bg-main border-white text-white"} "  p-2 md:p-4 rounded-full border-2 left-0 absolute    "`}>
         {navdata.icon}
           </div>
       </div>

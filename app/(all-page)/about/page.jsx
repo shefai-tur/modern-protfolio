@@ -10,7 +10,7 @@ import Nav from "@/app/components/Nav";
 
 const About = () => {
   return (
-    <div className="container mx-auto w-full   min-h-100vh bg-white rounded-xl  text-black px-2.5 md:px-12 py-10 md:py-25 relative">
+    <div className="container mx-auto w-full   min-h-100vh bg-white rounded-xl  text-black px-5 md:px-12 py-10 md:py-25 relative">
       <nav className=" absolute top-[-15] md:top-[-30] right-0 w-full z-50">
                  <Nav/>
                 </nav>
