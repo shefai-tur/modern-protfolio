@@ -65,14 +65,14 @@ export default function Home() {
             </div>
             <div className="md:w-1/2  flex-col items-center justify-center text-white text-center md:text-left mt-5 md:mt-0 px-5">
               <h3 className=" font-Roboto font-semibold text-xl mb-3 ">
-                Hey, my name is
+               Hi, I’m  Shefaitur Rahman
               </h3>
               <h1 className="font-Roboto font-bold text-3xl md:text-7xl mb-2 ">
-                Shefaitur Rahman
+                React & Tailwind   <span className=" text-main"> Frontend Developer.</span>
               </h1>
               <p className=" mb-11  font-Roboto font-semibold text-xl">
-                Professionally Expert in{" "}
-                <span className=" text-main"> Web & App Developer.</span>
+               I design fast, responsive and modern websites for startups & businesses.
+               
               </p>
 
               <button className=" bg-main text-[16px] font-medium px-8 md:px-11 py-2 md:py-3 rounded-sm text-white hover:bg-transparent  hover:text-main transition-all duration-300 ease-in-out border cursor-pointer">
